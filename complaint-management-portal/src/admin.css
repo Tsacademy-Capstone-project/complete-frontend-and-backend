@@ -1,0 +1,44 @@
+.admin-dashboard { padding: 32px; }
+.admin-page-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.admin-dashboard .page-header h1 { font-family: inherit; font-size: 28px; font-weight: 700; line-height: 1.3; color: #0f172a; }
+.admin-dashboard .page-header p:last-child { margin-top: 8px; color: #64748b; }
+.admin-dashboard .admin-stat { padding: 22px; border-radius: 12px; }
+.admin-dashboard .admin-stat span { color: #64748b; }
+.admin-dashboard .admin-stat strong { color: #0f172a; font-size: 30px; }
+.admin-success { display: flex; align-items: flex-start; gap: 10px; padding: 14px 16px; margin-bottom: 20px; background: #f0fdf4; color: #166534; border: 1px solid #bbf7d0; border-radius: 10px; font-size: 14px; }
+.admin-success svg { flex-shrink: 0; }
+.admin-complaints-panel { background: white; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.admin-panel-heading { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 24px 24px 0; }
+.admin-panel-heading h2 { margin: 0; color: #0f172a; font-size: 18px; }
+.admin-panel-heading p { margin: 6px 0 0; color: #64748b; font-size: 13px; }
+.admin-result-count { color: #64748b; font-size: 12px; white-space: nowrap; }
+.admin-dashboard .admin-toolbar { padding: 20px 24px; margin: 0; }
+.admin-dashboard .complaints-table { min-width: 950px; }
+.admin-dashboard .complaints-table td { font-size: 13px; }
+.admin-ticket-title { display: block; max-width: 280px; margin-top: 6px; font-weight: 600; overflow-wrap: anywhere; }
+.admin-user-email { display: block; margin-top: 4px; color: #64748b; font-size: 12px; }
+.admin-empty { padding: 60px 24px; text-align: center; color: #64748b; }
+.admin-empty h3 { margin: 0 0 10px; color: #0f172a; font-size: 17px; }
+.admin-empty p { font-size: 14px; }
+.admin-pagination { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 16px 24px; border-top: 1px solid var(--border); color: #64748b; font-size: 13px; }
+.admin-pagination > div { display: flex; gap: 8px; }
+.status-assigned { color: #6d28d9; background: #f5f3ff; }
+.priority-urgent { color: #b91c1c; background: #fee2e2; }
+.modal-overlay .form-alert { margin: 0 30px 20px; }
+.modal-overlay .resolved-feedback > span { display: block; margin-top: 12px; color: #64748b; font-size: 12px; }
+.modal-overlay .modal-header h2 { font-family: inherit; font-size: 24px; font-weight: 700; }
+.modal-overlay .complaint-description p, .modal-overlay .resolved-feedback p { overflow-wrap: anywhere; }
+.app-sidebar { overflow-x: hidden; }
+.dashboard-stats { grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)); }
+@media (max-width: 1000px) { .admin-dashboard .admin-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 767px) {
+  .admin-dashboard { padding: 24px 16px; }
+  .admin-page-header { align-items: flex-start; flex-direction: column; }
+  .admin-dashboard .page-header h1 { font-size: 25px; }
+  .admin-panel-heading { padding: 20px 16px 0; align-items: flex-start; }
+  .admin-result-count { display: none; }
+  .admin-dashboard .admin-toolbar { padding: 16px; align-items: stretch; flex-direction: column; }
+  .admin-dashboard .search-wrapper { width: 100%; }
+  .admin-dashboard .admin-stat { padding: 16px; }
+  .admin-pagination { padding: 16px; }
+}

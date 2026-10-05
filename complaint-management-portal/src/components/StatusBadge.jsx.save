@@ -1,0 +1,20 @@
+const statusClasses = {
+  Pending: "status-pending",
+  "In Progress": "status-progress",
+  Resolved: "status-resolved",
+  Closed: "status-closed",
+  Rejected: "status-rejected",
+};
+
+export default function StatusBadge({ status }) {
+  return (
+    <span
+      className={`status-badge ${
+        statusClasses[status] || ""
+      }`}
+    >
+      <span className="status-dot" />
+      {status}
+    </span>
+  );
+}
